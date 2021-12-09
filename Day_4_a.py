@@ -53,12 +53,14 @@ bingo_positions = [[0,1,2,3,4]
          , [4,8,12,16,20]
          ]
 
+## Empty dictionary to mark off bingo board positions
 checking_bingo = dict()
 for i in range(1,max(boards.keys()) + 1):
     checking_bingo[i] = list()
 
 #    checking_bingo[i].append(i)
 
+## Checking for bingo
 winning_board = 0
 winning_board_marked_pos = 0
 
@@ -85,6 +87,7 @@ print(winning_board)
 print(winning_board_marked_pos)
 print(boards[winning_board])
 
+## Calculating the board score
 score = 0
 for num in boards[winning_board]:
 #    print(num)
