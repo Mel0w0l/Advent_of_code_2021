@@ -56,7 +56,7 @@ for i in range(len(x1)):
                 #print('start with x1 y1')
                 dia_pairs.append(str(j) + '-' + str(y_start))
                 #print(str(j) + '-' + str(y_start))
-                if y1[i] > y2[i]: # /
+                if int(y1[i]) > int(y2[i]): # /
                     y_start -= 1
                 else:
                     y_start += 1
@@ -67,7 +67,7 @@ for i in range(len(x1)):
                 #print('start with x2,y2')
                 dia_pairs.append(str(j) + '-' + str(y_start))
                 #print(str(j) + '-' + str(y_start))
-                if y2[i] > y1[i]: # /
+                if int(y2[i]) > int(y1[i]): # /
                     y_start -= 1
                 else:
                     y_start += 1
